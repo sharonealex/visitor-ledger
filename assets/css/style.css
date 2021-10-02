@@ -1,0 +1,36 @@
+header {
+    background-color: blue;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+li  {
+    text-align: right;
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+ul{
+    text-align: right;
+}
+
+img{
+display: inline-block;
+height: 400px;
+width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    
+}
