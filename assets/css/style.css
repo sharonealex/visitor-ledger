@@ -99,13 +99,43 @@ select {
     padding: .5em;
     margin-bottom: 1em;
   }
-
+/* 
   button {
     padding: 1em; 
-     background: gray;
+     background: yellowgreen;
      color: white;
-     border: 0;
+     border: none;
+     box-shadow: 0 5px #999;
+     border-radius: 15px;
+     cursor: pointer;
    }
+
+   .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+  } */
+
+  button {
+    
+    padding: 1em; 
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: yellowgreen;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
    
    .taxi > label,
   .extras > label {
