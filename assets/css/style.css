@@ -10,17 +10,24 @@ body{
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #c6919a;
-    background-color: khaki;
+    background-color: #c6919a;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h6 {
     margin: 20px;
     text-align: center;
 }
+h1{
+    font-size: 30px;
+}
 
 main {
     padding: 60px 0px;
+    display: flex;
 }
 
 li{
@@ -28,6 +35,12 @@ li{
     padding: 20px;
     text-decoration: none;
     
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
 }
 
 ul{
@@ -39,25 +52,46 @@ a{
     color: white;
 }
 
+.hero {
+background-image: url("assets/images/visitor-entry.png");
+background-position: left ;
+background-size: contain;
+}
+
+
+.hero {
+    flex: 1 1 500px;
+    height: 800px;
+    margin-right: 25px;
+    background-image: url("../images/visitor-entry.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
 header, footer {
     width: 100%;
-    height: 120px;
     background-color:#303030;
-    line-height: normal;
+   
 
 }
 
 header{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
     border-bottom: 10px solid white;
 }
 
 footer {
-    position: absolute;
+    display: flex;
+    height: 200px;
     color: white;
     border-bottom: 20px solid white;
     text-align: center;
     width: 100%;
+    padding: 60px;
 }
 
 figure {
@@ -70,15 +104,12 @@ img {
     width: 100%;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-}
+
 
 form { /*center the form on page*/
 margin: 0 auto;
-width: 60%;
-background-color: coral;
+flex: 1 1 500px;
+background-color: #7e898d;
 border-radius: 20px;
 height: 100px;
 border: 10px solid black;
@@ -102,7 +133,7 @@ textarea {
   }
     
   #button {
-      background-color: black;
+      background-color: #5e6679;
       width: 100px;
       height: 50px;
       color: white;
