@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  display: flex;
+  flex: 1;
+}
+
+#main > article {
+  flex: 0 0 60vw;
+  background-color: blue;
+}
+
+#main > aside {
+  flex: 0 0 40vw;
+  background-color: red;
+}
+
+header,
+footer {
+  background: yellowgreen;
+  height: 20vh;
+}
+
+.hero {
+  background-image: url("/assets/images/visitor-entry.png");
+  background-size: cover;
+}
