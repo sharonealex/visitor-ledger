@@ -14,7 +14,7 @@ body {
   flex: 1;
 }
 
-#main > article {
+#main > form {
   flex: 0 0 60vw;
   background-color: blue;
 }
@@ -33,4 +33,23 @@ footer {
 .hero {
   background-image: url("/assets/images/visitor-entry.png");
   background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
 }

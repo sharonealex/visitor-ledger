@@ -14,7 +14,58 @@
     <header>Header</header>
     <div id="main">
         <aside class="hero"></aside>
-        <article>Article</article>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="customer_name">Name</label>
+                        <input id="customer_name">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone_number">Phone </label>
+                        <input type="tel" id="phone_number">
+                    </div>
+                    <div class="input-group">
+                        <label for="email_address">Email </label>
+                        <input type="email" id="email_address">
+                    </div>
+                    <div class="input-group">
+                        <label for="pickup_time">Pickup Hours</label>
+                        <input type="datetime-local" id="pickup_time">
+                    </div>
+                    <div class="input-group">
+                        <label for="pickup_place">Pickup Place</label>
+                        <select id="pickup_place">
+                            <option value="" selected="selected"></option>
+                            <option value="townhouse">Townhall</option>
+                            <option value="theatre">Theatre</option>
+                            <option value="mall">Shoppint Mall</option>
+                    </div>
+                    <div class="input-group">
+                        <label for="dropoff">Dropoff Place</label>
+                        <input id="dropoff">
+                    </div>
+                </div>
+                <div class="col">
+                    <fieldset class="taxi">
+                        <legend>Which taxi do you require?</legend>
+                        <label> <input type="radio" id="taxi_car" value="car"> Car </label>
+                        <label> <input type="radio" id="taxi_van" value="van"> SUV </label>
+                        <label> <input type="radio" id="taxi_tuk" value="tuktuk"> Limo </label>
+                      </fieldset>
+                
+                      <fieldset class="extras">
+                        <legend>Extras</legend>
+                        <label> <input type="checkbox" id="extras_baby" value="baby"> Baby Seat </label>
+                        <label> <input type="checkbox" id="extras_wheel" value="wheelchair"> Wheelchair Access </label>
+                        <label> <input type="checkbox" id="extras_tip" value="tip"> Luggage Bag </label>
+                      </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <button id="submit">Submit Booking</button>
+            </div>
+        </form>
     </div>
     <footer>Footer</footer>
 
