@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 /*element selectors*/
@@ -96,7 +97,7 @@ textarea {
 }
 
 textarea {
-    vertical-align: top;
+   
     height: 60px;
   }
     
