@@ -62,6 +62,7 @@ a {
 .hero {
   background-image: url("/assets/images/visitor-entry.png");
   background-size: cover;
+  /*transform: rotate(7deg);*/
 }
 
 form {
@@ -111,6 +112,29 @@ select {
     display: block;
   }
 
+  /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+input:focus {
+  background-color: lightgreen
+}
   /*media queries*/
   
 @media screen and (max-width: 768px) {
