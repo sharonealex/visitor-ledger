@@ -1,45 +1,57 @@
-/*universal selector*/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
-/*element selectors*/
 body {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: black;
-  background-color: #c6919a;
-  font-size: 20px;
+  flex-direction: column;
 }
 
-header {
+#main {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  height: 20vh;
-  background-color: #303030;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
   flex: 1;
 }
 
-nav {
+#main > form {
+  flex: 0 0 60vw;
+  background-color: beige;
+  padding: 20px;
+}
+
+#main > aside {
+  flex: 0 0 40vw;
+  background-color: red;
+}
+
+header,
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: yellowgreen;
+  color: white;
+}
+
+footer{
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+nav, h1 {
   display: flex;
   align-items: center;
+  
 }
 
 li {
   display: inline;
   padding: 20px;
   text-decoration: none;
+  font-size: larger;
 }
 
 a {
@@ -48,76 +60,52 @@ a {
 }
 
 .hero {
-  flex: 1 1 50vw;
-  
-  margin: 25px;
-  background-image: url("../images/visitor-entry.png");
+  background-image: url("/assets/images/visitor-entry.png");
   background-size: cover;
-  background-position: center;
-}
-
-section.card {
-  display: flex;
-  flex-direction: column;
-}
-
-div.card-header {
-  background-color: #5e6679;
-}
-
-div.card-body {
-  flex: 1 1 100vw;
-  max-width: 800px;
-  flex-direction: column;
 }
 
 form {
-  /*center the form on page*/
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #7e898d;
-  border-radius: 20px;
-  border: 1px dashed black;
-  margin: 10px;
+  background-color: beige;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.input-group {
+  display: flex;
 }
 
 label {
-  display: inline;
-  width: 200px;
+  margin: 10px;
 }
 
 input,
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid #4f4846;
-}
+select {
+    flex: 6; 
+    padding: .5em;
+    margin-bottom: 1em;
+  }
 
-textarea {
-  height: 60px;
-}
-
-#button {
-  background-color: #5e6679;
-  width: 100px;
-  height: 50px;
-  color: white;
-  position: absolute;
-  left: 150px;
-}
-
-footer {
-  display: flex;
-  flex-grow: 2 1 200px;
-  height: 20vh;
-  color: white;
-  padding: 10px;
-  background-color: #303030;
-}
-
-#submit-button {
-  position: relative;
-  left: 280px;
-  width: 100px;
-}
+  button {
+    padding: 1em; 
+     background: gray;
+     color: white;
+     border: 0;
+   }
+   
+   .taxi > label,
+  .extras > label {
+    display: block;
+  }

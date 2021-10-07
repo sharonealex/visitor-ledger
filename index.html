@@ -1,61 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width: device-width; initial-scale:1.0">
-    <title>website</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>VISITOR LEDGER</h1>
+      <h1>VISITOR LEDGER</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <aside class="hero">
-
-        </aside>
-
-        <section class="card">
-            <div class="card-header">Event Registration Form</div>
-            <div class="card-body">
-                <form>
-                    <label for="username">Name</label>
-                    <input id="username" type="text" placeholder="First Last" />
-                    <label for="company">Company</label>
-                    <input id="company" type="text" placeholder="Company" />
-                    <label  for="email">E-mail</label>
-                    <input id="email" type="text" placeholder="me@example.com" />
-                    <label  for="phone">Phone</label>
-                    <input id="email" type="text" placeholder="me@example.com" />
-                    <label for="event">Event</label>
-                    <select id="event">
-                      <option>Beginner Conference</option>
-                      <option selected>Node.js meetup</option>
-                      <option>Contruction</option>
-                    </select>
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" placeholder="Great article!"></textarea>
-                    <input class="checkbox" id="agreement" type="checkbox" />
-                    <label for="agreement">I agree to share my e-mail address with the event committee for followup and feedback</label>
-                    <button>Submit</button>
-                </form>
+    <div id="main">
+      <aside class="hero"></aside>
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="input-group">
+              <label for="customer_name">Name</label>
+              <input id="customer_name" />
             </div>
+            <div class="input-group">
+              <label for="phone_number">Phone </label>
+              <input type="tel" id="phone_number" />
+            </div>
+            <div class="input-group">
+              <label for="email_address">Email </label>
+              <input type="email" id="email_address" />
+            </div>
+            <div class="input-group">
+              <label for="pickup_time">Pickup Hours</label>
+              <input type="datetime-local" id="pickup_time" />
+            </div>
+            <div class="input-group">
+              <label for="pickup_place">Pickup Place</label>
+              <select id="pickup_place">
+                <option value="" selected="selected"></option>
+                <option value="townhouse">Townhall</option>
+                <option value="theatre">Theatre</option>
+                <option value="mall">Shoppint Mall</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="dropoff">Dropoff Place</label>
+              <input id="dropoff" />
+            </div>
+          </div>
+          <div class="col">
+            <fieldset class="taxi">
+              <legend>Which taxi do you require?</legend>
+              <label>
+                <input type="radio" id="taxi_car" value="car" /> Car
+              </label>
+              <label>
+                <input type="radio" id="taxi_van" value="van" /> SUV
+              </label>
+              <label>
+                <input type="radio" id="taxi_tuk" value="tuktuk" /> Limo
+              </label>
+            </fieldset>
 
-        </section>
-    </main>
+            <fieldset class="extras">
+              <legend>Extras</legend>
+              <label>
+                <input type="checkbox" id="extras_baby" value="baby" /> Baby
+                Seat
+              </label>
+              <label>
+                <input type="checkbox" id="extras_wheel" value="wheelchair" />
+                Wheelchair Access
+              </label>
+              <label>
+                <input type="checkbox" id="extras_tip" value="tip" /> Luggage
+                Bag
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <button id="submit">Submit Booking</button>
+        </div>
+      </form>
+    </div>
     <footer>
-        <h6> © 2021 Visitor 2021 Website Productions </h6>
-    </footer>
-</body>
+        <h5>Made with ❤️️ by Horiseon</h5>
+        <p>
+            &copy; 2019 Visitron Social Solution Services, Inc.
+        </p>
 
+    </footer>
+  </body>
 </html>
