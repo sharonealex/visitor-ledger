@@ -70,6 +70,7 @@ form {
   background-color: beige;
   border-radius: 2px;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .row {
@@ -109,3 +110,25 @@ select {
   .extras > label {
     display: block;
   }
+
+  /*media queries*/
+  
+@media screen and (max-width: 768px) {
+  header,footer{
+    background-color: teal;
+  }
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body */
+  form {
+    order: 2;
+  }
+}
